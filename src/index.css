@@ -1,13 +1,60 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  padding: 10px 30px;
+  background: #f90;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.btn-disabled {
+  background: #dedede;
+  color: black;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.pokemon-container {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon {
+  width: 100px;
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ff99001a;
+  border-radius: 4px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.button-container {
+  margin: 20px 0;
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
 }
